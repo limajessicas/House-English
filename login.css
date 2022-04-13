@@ -10,18 +10,21 @@ body {
     border-radius: 15px;
     color: aliceblue;
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 40%;
 }
 
 .input {
-    padding: 15px;
+    padding: 30px;
+
 }
 
 .botao {
     background-color: white;
-    padding: 10px;
-    width: 100%;
-    border-radius: 15px;
+    padding: 5px;
+    width: 80%;
+    border-radius: 10px;
     font-size: white;
+
+
 }

@@ -12,11 +12,39 @@
 <body>
     <div class="tela-login">
         <h1>Login</h1>
+        <input type="nomecompeto" placeholder="Nome Completo"></input>
+        <br><br>
+        <input type="telefone" placeholder="Telefone"></input>
+        <br><br>
         <input type="text" placeholder="E-mail"></input>
         <br><br>
         <input type="password" placeholder="Senha"></input>
         <br><br>
+        <label for="nivel">Nível</label>
+        <select name="nivel">
+            <option selected disabled>Selecione</option>
+            <option value="basico">Básico</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avancado">Avançado</option>
+            <br><br>
+            <br><br>
+        </select>
+
+        <div style="padding-top: 10px ;">
+            <label for="contato">Qual a melhor forma para entrarmos em contato com você?</label>
+            <br>
+            <input type="radio" name="email" value="email">
+            <label for="email">Email</label>
+            <input type="radio" name="ligacao" value="ligacao">
+            <label for="ligacao">Ligação</label>
+            <input type="radio" name="whatsapp" value="whatsapp">
+            <label for="whatsapp">WhatsApp</label>
+        </div>
+        <br><br>
         <button class="botao">Entrar</button>
+    </div>
+
+
     </div>
 </body>
 
