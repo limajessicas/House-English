@@ -23,6 +23,7 @@ body {
 
 .cabecalho-imagem {
     height: 72px;
+    max-width: 100%;
 }
 
 .cabecalho-menu {
@@ -49,6 +50,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-left: 40px;
 
 }
 
@@ -67,28 +69,15 @@ body {
 
 .conteudo-principal-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 20px;
     color: #FFF2E7;
 }
 
 .conteudo-principal-imagem {
-    width: 25%;
+    width: 60%;
 }
 
-.conteudo-principal-escrito-botao {
-    background-color: #ECD6C4;
-    width: 180PX;
-    height: 60px;
-    border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    font-family: 'Sarala', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #2F2325;
-    cursor: pointer;
-}
 
 .conteudo-secundario {
     display: flex;
@@ -115,20 +104,39 @@ body {
     color: #FFF2E7
 }
 
-.rodape {
-    padding: 32px;
-    align-items: center;
-    border-top: 0.1px solid rgb(255, 255, 255);
 
+
+.id-sobre {
+    color: transparent;
+}
+
+.quemSomos {
+    color: #FFF2E7;
+    font-size: 25px;
+    font-family: 'Sarala', sans-serif;
+    margin-left: 5%;
+}
+
+.quemSomosTexto {
+    color: #FFF2E7;
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+    margin-left: 110px;
 }
 
 .endereco {
     font-family: 'Varela Round', sans-serif;
-
     color: white;
     display: flex;
     padding-top: 10px;
     scroll-padding-inline-end: 20px;
     align-items: center;
     flex-direction: column;
+}
+
+
+.rodape {
+    padding: 32px;
+    align-items: center;
+    border-top: 0.1px solid rgb(255, 255, 255);
 }
