@@ -24,13 +24,13 @@
         <div class="conteudo"></div>
         <section class="items">
             <% listaProdutos.forEach(itemsDaListaProdutos =>{ %>
-            <div class="caneta">
-                <img class="imagem-caneta" src="<%= itemsDaListaProdutos.imagem %>" alt="<%= itemsDaListaProdutos.nome %>"></img>
+            <div class="produtos">
+                <img class="imagens" src="<%= itemsDaListaProdutos.imagem %>" alt="<%= itemsDaListaProdutos.nome %>"></img>
                 <br><br>
                 <p><strong><%= itemsDaListaProdutos.nome %> </strong></p>
                 <p><strong> R$ <%= itemsDaListaProdutos.valor %></strong></p>
                 <br><br>
-                <button class="comprar" type="comprar">Comprar</button>
+                <button class="comprar" type="comprar">Adicionar ao carrinho</button>
             </div>
             <% }) %>
             
