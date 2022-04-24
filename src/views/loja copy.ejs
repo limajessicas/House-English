@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Um bot que ira moderar e deixar a sua comunidade segura de um jeito facil">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/loja.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="images/bandeira inglaterra.png" alt="logo da comunidade">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item"
+                href="/">Home</a>
+            <a class="cabecalho-menu-item"
+                href="/login">Login</a>
+        </nav>
+    </header>
+    <main>
+        <div class="conteudo"></div>
+        <section class="items">
+            <div class="caneta" id="caneta">
+                <img class="imagem-caneta" src="images/caneta.jpg" alt="imagem-caneta"></img>
+                <br><br>
+                <p><strong>Caneta Tradutora</strong></p>
+                <p><strong>R$ 199,99</strong></p>
+                <br><br>
+                <button class="comprar" type="comprar">Comprar</button>
+            </div>
+            <div class="caneca" id="caneca">
+                <img class="imagem-caneca" src="images/caneca.jpeg" alt="imagem-caneca"></img>
+                <br><br>
+                <p> <strong>Caneca Friends</strong></p>
+                <p> <strong>R$ 39,99</strong></p>
+                <br><br>
+                <button class="comprar" type="comprar">Comprar</button>
+            </div>
+            <div class="livros" id="livros">
+                <img class="imagem-livros" src="images/livros.jpeg" alt="imagem-livros"></img>
+                <br><br>
+                <p><strong>Kit Livros Cambridge</strong></p>
+                <p> <strong>R$ 299,99</strong></p>
+                <br><br>
+                <button class="comprar" type="comprar">Comprar</button>
+            </div>
+            <div class="livro-ilustrado" id="livro-ilustrado">
+                <img class="imagem-ilustrado" src="images/livro-ilustrado.jpeg" alt="imagem-ilustradolivros"></img>
+                <br><br>
+                <p><strong>Livro Ilustrado</strong></p>
+                <p> <strong>R$ 79,99</strong></p>
+                <br><br>
+                <button class="comprar" type="comprar">Comprar</button>
+            </div>
+            <div class="planner" id="planner">
+                <img class="imagem-planner" src="images/planner.jpeg" alt="imagem-planner"></img>
+                <br><br>
+                <p><strong>Planner</strong></p>
+                <p><strong>R$ 89,99</strong></p>
+                <br><br>
+                <button class="comprar" type="comprar">Comprar</button>
+            </div>
+            <div class="atividades" id="atividades">
+                <img class="imagem-atividades" src="images/atividades.jpeg" alt="imagem-atividades"></img>
+                <br><br>
+                <p> <strong>365 atividades em Inglês</strong></p>
+                <p> <strong>R$ 149,99</strong></p>
+                <br><br>
+                <button class="comprar" type="comprar">Comprar</button>
+            </div>
+            <div class="cinquenta-aulas-ingles" id="cinquenta-aulas-ingles">
+                <img class="imagem-50-aulas-ingles" src="images/50-aulas-ingles.jpeg" alt="imagem-50-aulas-ingles"></img>
+                <br><br>
+                <p><strong>Livro 50 aulas em Ingles</strong></p>
+                <p> <strong>R$ 99,99</strong></p>   
+                <br><br>
+                <button class="comprar" type="comprar">Comprar</button>
+            </div>
+            <br><br>
+        </section>
+        
+
+    </main>
+<%- include("./partials/footer.ejs") %>
+</body>
+
+</html>
