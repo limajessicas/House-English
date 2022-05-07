@@ -23,9 +23,9 @@
     <main>
         <div class="conteudo"></div>
         <section class="items">
-            <% listaProdutos.forEach(itemsDaListaProdutos =>{ %>
+            <% produtos.forEach(itemsDaListaProdutos =>{ %>
             <div class="produtos">
-                <img class="imagens" src="<%= itemsDaListaProdutos.imagem %>" alt="<%= itemsDaListaProdutos.nome %>"></img>
+                <img class="imagens" src="<%= itemsDaListaProdutos.nome_imagem %>" alt="<%= itemsDaListaProdutos.nome %>"></img>
                 <br><br>
                 <p><strong><%= itemsDaListaProdutos.nome %> </strong></p>
                 <p><strong> R$ <%= itemsDaListaProdutos.valor %></strong></p>
