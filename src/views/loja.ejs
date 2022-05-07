@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" Um bot que ira moderar e deixar a sua comunidade segura de um jeito facil">
     <title>Loja Virtual</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/loja.css">
 </head>
@@ -25,7 +24,7 @@
         <section class="items">
             <% produtos.forEach(itemsDaListaProdutos =>{ %>
             <div class="produtos">
-                <img class="imagens" src="<%= itemsDaListaProdutos.nome_imagem %>" alt="<%= itemsDaListaProdutos.nome %>"></img>
+                <img class="imagens" src="images/<%= itemsDaListaProdutos.nome_imagem %>" alt="<%= itemsDaListaProdutos.nome %>"></img>
                 <br><br>
                 <p><strong><%= itemsDaListaProdutos.nome %> </strong></p>
                 <p><strong> R$ <%= itemsDaListaProdutos.valor %></strong></p>

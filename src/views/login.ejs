@@ -19,26 +19,23 @@
     </header>
 
     <div class="conteudo"></div>
-
+    
+    <form action="/login/logar" method="POST">
     <div class="tela-login">
 
         <h1>Login</h1>
         <br><br>
-        <input type="text" placeholder="E-mail"></input>
+        <input type="text" name="email" placeholder="E-mail"></input>
         <br><br>
-        <input type="password" placeholder="Senha"></input>
+        <input type="password" name="senha" placeholder="Senha"></input>
         <br><br>
-        <a class="esqueciSenha">Esqueci a Senha</a>
-        <br><br>
-        <button class="botao">Entrar</button>
+        <button class="botao" type="submit">Entrar</button>
         <br><br>
         <br><br>
         <div class="cadastro"> Ainda não tem cadastro?</div> <a class="cliqueAqui"
             href="/cadastro">Clique aqui</a>
-
-
     </div>
-
+</form>
     </div>
 
     </div>

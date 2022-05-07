@@ -18,42 +18,39 @@
     </header>
 
     <div class="conteudo"></div>
-
+    <form action="/cadastro/criar" method="POST">
     <div class="tela-login">
         <h1 class="cadastro">Cadastre-se</h1>
-        <input class="nomeCompleto" type="nomecompleto" placeholder="Informe o nome completo"></input>
+        <input class="nomeCompleto" required name="nome" type="text" placeholder="Informe o nome completo"></input>
         <br><br>
-        <input class="telefone" type="telefone" placeholder="(99) 9 9999-9999"></input>
+        <input class="telefone" required name="telefone" type="tel" placeholder="(99) 9 9999-9999"></input>
         <br><br>
-        <input class="email" type="text" placeholder="Informe o seu e-mail"></input>
+        <input class="CPF" required name="CPF" type="text" placeholder="CPF: 000.000.000-00"></input>
         <br><br>
-        <input class="password" type="password" placeholder="Informe uma senha"></input>
+        <input class="email" required name="email" type="email" placeholder="Informe o seu e-mail"></input>
         <br><br>
-        <input class="password" type="password" placeholder="Confirme a senha"></input>
+        <input class="password" required name="senha" type="password" placeholder="Informe uma senha"></input>
         <br><br>
-        <label for="nivel">Nível</label>
-        <select class="nivel" name="nivel">
-            <option class="nivel" selected disabled>Selecione</option>
-            <option class="nivel" value="basico">Básico</option>
-            <option class="nivel" value="intermediario">Intermediário</option>
-            <option class="nivel" value="avancado">Avançado</option>
-            <br><br>
-            <br><br>
-        </select>
+                <input class="cep" name="cep" type="text" placeholder="CEP"></input>
+                <br><br>
+                <input class="endereco" name="endereco" type="text" 
+                    placeholder="Informe seu endereço" required></input>
+                <br><br>
+                <input class="numero" name="numero" type="number" required  placeholder="Numero"></input>
+                <br><br>
+                <input class="complemento" name="complemento" required type="text" 
+                    placeholder="complemento"></input>
+                <br><br>
+                <input class="bairro" name="bairro" type="text" required  placeholder="bairro"></input>
+                <br><br>
+                <input class="cidade" name="cidade" type="text" required placeholder="cidade"></input>
+                <br><br>
+                <input class="estado" name="estado" type="text" required  placeholder="estado"></input>
+                <br><br>
+        <button type="submit" class="botao">Cadastrar</button>
 
-        <div style="padding-top: 10px ;">
-            <label class="text" for="contato">Qual a melhor forma para entrarmos em contato?</label>
-            <br>
-            <input class="text" type="radio" name="email" value="email">
-            <label class="text" for="email">Email</label>
-            <input class="text" type="radio" name="ligacao" value="ligacao">
-            <label class="text" for="ligacao">Ligação</label>
-            <input class="text" type="radio" name="whatsapp" value="whatsapp">
-            <label class="text" for="whatsapp">WhatsApp</label>
-        </div>
-        <br><br>
-        <button class="botao">Entrar</button>
     </div>
+    </form>
 </body>
 
 </html>
