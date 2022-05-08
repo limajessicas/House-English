@@ -12,7 +12,7 @@ const LoginController = {
         senhaBcrypt.email === email &&
         bcrypt.compareSync(senha, senhaBcrypt.senha)
       ) {
-        return response.send("Sucesso!");
+        return response.redirect("/");
       }
     } else {
       return response.send("E-mail ou senha invalida");
