@@ -6,57 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil do usuario</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/perfil.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/perfil.css"/>
 </head>
 <body>
     <header class="cabecalho">
-        <img class="cabecalho-imagem" src="images/bandeira inglaterra.png" alt="logo da comunidade">
+        <img class="cabecalho-imagem" src="../images/bandeira inglaterra.png" alt="logo da comunidade">
         <nav class="cabecalho-menu">
             <a class="cabecalho-menu-item" href="/">Home</a>
         </nav>
     </header>
-    <main>
-    <div class="perfil"></div>
-
+    <div class="perfil">
+    <div class="conteudo"></div>
     <div class="tela-perfil">
-
-        <h1>Dados do usuario</h1>
+        <h1>Perfil do usuario</h1>
         <form action="/perfil/update?_method=PUT" method="POST">
-        <input type="text" value="<%=myCli.pk_id_cliente%>" hidden>
-        <input class="nomeCompleto" type="text" name="nome"  value="<%=myCli.nome%>" placeholder="Informe o nome completo">
+        <input type="text" name='id_cliente' value="<%=myCli.pk_id_cliente%>" hidden>
+        <input class="nomeCompleto" type="text" name="nome" required value="<%=myCli.nome%>" placeholder="Informe o nome completo">
         <br><br>
-        <input class="cpf" type="text" name="cpf"  value="<%=myCli.cpf%>" placeholder="CPF"></input>
+        <input class="cpf" type="text" name="cpf" required value="<%=myCli.cpf%>" placeholder="CPF"></input>
         <br><br>
-        <input class="telefone" type="tel" name="telefone"  value="<%=myCli.telefone%>" placeholder="(99) 9 9999-9999"></input>
+        <input class="telefone" type="tel" name="telefone" required value="<%=myCli.telefone%>" placeholder="(99) 9 9999-9999"></input>
         <br><br>
-        <input class="email" type="email" name="email"  value="<%=myCli.email%>" placeholder="Informe o seu e-mail"></input>
+        <input class="email" type="email" name="email" required value="<%=myCli.email%>" placeholder="Informe o seu e-mail"></input>
         <br><br>
-        <input class="password" type="password" name="senha" placeholder="Informe uma senha"></input>
+        <input class="password" type="password" name="senha"  placeholder="Informe uma senha"></input>
         <br><br>
-        <input class="cep" type="text" name="cep"  value="<%=myEnd.cep%>" placeholder="CEP"></input>
+        <input class="cep" type="text" name="cep" required value="<%=myEnd.cep%>" placeholder="CEP"></input>
         <br><br>
-        <input class="endereco" type="text" name="rua"  value="<%=myEnd.rua%>" placeholder="Informe seu endereço"></input>
+        <input class="endereco" type="text" name="rua" required value="<%=myEnd.rua%>" placeholder="Informe seu endereço"></input>
         <br><br>
-        <input class="numero" type="number" name="numero"  value="<%=myEnd.numero%>" placeholder="Numero"></input>
+        <input class="numero" type="number" name="numero" required value="<%=myEnd.numero%>" placeholder="Numero"></input>
         <br><br>
-        <input class="complemento" type="text" name="complemento"  value="<%=myEnd.complemento%>" placeholder="complemento"></input>
+        <input class="complemento" type="text" name="complemento" required value="<%=myEnd.complemento%>" placeholder="complemento"></input>
         <br><br>
-        <input class="bairro" type="text" name="bairro"  value="<%=myEnd.bairro%>" placeholder="bairro"></input>
+        <input class="bairro" type="text" name="bairro" required value="<%=myEnd.bairro%>" placeholder="bairro"></input>
         <br><br>
-        <input class="cidade" type="text" name="cidade"  value="<%=myEnd.cidade%>" placeholder="cidade"></input>
+        <input class="cidade" type="text" name="cidade" required value="<%=myEnd.cidade%>" placeholder="cidade"></input>
         <br><br>
-        <input class="estado" type="text"  name="estado"  value="<%=myEnd.estado%>" placeholder="estado"></input>
+        <input class="estado" type="text"  name="estado" required value="<%=myEnd.estado%>" placeholder="estado"></input>
         <br><br>
         <button class="botao" type="submit">Salvar</button>
         </form>
-       <form>
+       <form  action="/perfil/delete/<%=myCli.pk_id_cliente %>?_method=DELETE" method="POST">
            <br><br>
             <button class="botao"  type="submit">Deletar</button>
        </form>
-
     </div>
     </div>
-</main>
 </body>
-
 </html>

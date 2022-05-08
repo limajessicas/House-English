@@ -37,7 +37,7 @@ const CadastroController = {
       email,
       senha: senhaBcrypt,
     });
-    return response.send(cliente);
+    return response.redirect("/login");
   },
 };
 
