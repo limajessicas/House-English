@@ -1,6 +1,6 @@
 const HomeController = {
   homeView: (requisicao, response) => {
-    return response.render("home.ejs");
+    return response.render("home.ejs", { usuario: requisicao.session.usuario });
   },
 };
 

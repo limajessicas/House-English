@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="../stylesheets/carrinho.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <img
+        class="cabecalho-imagem"
+        src="../images/bandeira inglaterra.png"
+        alt="logo da comunidade"
+      />
+      <nav>
+            <% if(usuario !=undefined){ %>
+        <a
+          class="cabecalho-menu-item"
+          href="/perfil/<%=usuario.pk_id_cliente%>"
+        >
+          <%= usuario.nome %>
+        </a>
+        <% }else{ %>
+        <a class="cabecalho-menu-item" href="/login">Login</a>
+        <%}%>
+      </nav>
+      <div class="cabecalho-menu"></div>
+    </header>
+    <main class="conteudo">
+    <section>
+      <h1 class="conteudo-principal">Carrinho</h1>
+    </section>
+    <form action="/carrinho/pedido" method="POST" >
+    <section id="item1">
+      <div>
+        <h2 class="item-carrinho">
+           <input type="text" name="idProduto" value="<%=pedido.pk_id_produto%>" hidden>
+           <label>Item</label>
+           <label><%=pedido.nome%></label>
+           <br></br> 
+        <img class="imagens" src="../images/<%= pedido.nome_imagem %>" alt="<%= pedido.nome %>"></img>
+        <br></br> 
+        <label>Valor R$ <%=pedido.valor%></label>
+        <input name="quantidade"></input>
+        <br></br> 
+      </div>
+    </section>
+    </section>
+      <button class="comprar" type="submit">Comprar</button>
+    </section>
+    </form>
+      </div>
+    </main>
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

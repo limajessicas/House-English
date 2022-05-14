@@ -15,29 +15,37 @@
         <nav class="cabecalho-menu">
             <a class="cabecalho-menu-item"
                 href="/">Home</a>
-            <a class="cabecalho-menu-item"
-                href="/login">Login</a>
+            <% if(usuario !=undefined){ %>
+        <a
+          class="cabecalho-menu-item"
+          href="/perfil/<%=usuario.pk_id_cliente%>"
+        >
+          <%= usuario.nome %>
+        </a>
+        <% }else{ %>
+        <a class="cabecalho-menu-item" href="/login">Login</a>
+        <%}%>
         </nav>
     </header>
     <main>
         <div class="conteudo"></div>
+
         <section class="items">
             <% produtos.forEach(itemsDaListaProdutos =>{ %>
-            <div class="produtos">
+            <div class="produtos" id="<%=itemsDaListaProdutos.pk_id_produto%>">
+            <form action="/carrinho/<%=itemsDaListaProdutos.pk_id_produto%>" method="GET">
                 <img class="imagens" src="images/<%= itemsDaListaProdutos.nome_imagem %>" alt="<%= itemsDaListaProdutos.nome %>"></img>
                 <br><br>
                 <p><strong><%= itemsDaListaProdutos.nome %> </strong></p>
                 <p><strong> R$ <%= itemsDaListaProdutos.valor %></strong></p>
                 <br><br>
-                <button class="comprar" type="comprar">Adicionar ao carrinho</button>
+                <button class="comprar" type="submit">Adicionar ao carrinho</button>
+                       </form>
             </div>
             <% }) %>
-            
-
-
-
-            <br><br>
         </section>
+ 
+
         
 
     </main>

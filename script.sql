@@ -78,8 +78,8 @@ select *from pedido;
 
 CREATE TABLE itens_pedidos (
     pk_id_itens_pedidos int NOT NULL AUTO_INCREMENT,
-    fk_id_pedido int NOT NULL,
-	fk_id_produto int NOT NULL,
+    fk_id_pedido int,
+	fk_id_produto int,
     quantidade int,
     PRIMARY KEY (pk_id_itens_pedidos),
 	FOREIGN KEY (fk_id_pedido) REFERENCES pedido(pk_id_pedido),
@@ -89,7 +89,7 @@ CREATE TABLE itens_pedidos (
 select *from itens_pedidos;
 
 ALTER TABLE pedido
-ADD fk_id_itens_pedidos int NOT NULL;
+ADD fk_id_itens_pedidos int;
 
 select *from pedido;
 
