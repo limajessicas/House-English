@@ -3,6 +3,7 @@ const { Produto, Itens_pedidos, Pedido } = require("../../models");
 const CarrinhoController = {
   carrinhoView: async (requisicao, response) => {
     let { id } = requisicao.params;
+
     let produtoSelecionado = await Produto.findOne({
       where: { pk_id_produto: `${id}` },
     });
@@ -19,9 +20,10 @@ const CarrinhoController = {
       where: { pk_id_produto: parseInt(idProduto) },
     });
 
+    let total = produtoComprado.valor * quantidade;
     let pedido = await Pedido.create({
       fk_id_cliente: requisicao.session.usuario.pk_id_cliente,
-      total: produtoComprado.valor * quantidade,
+      total: total,
       status: "Concluido",
     });
 
@@ -37,6 +39,7 @@ const CarrinhoController = {
       },
       { where: { pk_id_pedido: itemDoPedido.fk_id_pedido } }
     );
+    return response.redirect("/realizado");
   },
 };
 

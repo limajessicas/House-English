@@ -1,110 +1,97 @@
 body {
-    font-size: 100%;
-    background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%)
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%);
 }
 
 .cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
 }
 
 .cabecalho-imagem {
-    height: 72px;
-    max-width: 100%;
+  height: 72px;
+  max-width: 100%;
 }
 
 .cabecalho-menu {
-    display: flex;
-    gap: 32px;
+  display: flex;
+  gap: 32px;
 }
 
 .cabecalho-menu-item {
-    font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
-    font-weight: 400;
-    font-size: 18px;
-    cursor: pointer;
-    margin-left:250%;
+  font-family: "Sarala", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 250%;
 }
 
 .conteudo {
-    margin-bottom: 48px;
-    border-top: 0.4px solid #FFF2E7;
+  margin-bottom: 48px;
+  border-top: 0.4px solid #fff2e7;
 }
 
-.conteudo-principal {   
-    font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
-    font-weight: 400;
-    font-size: 18px;
-    cursor: pointer;
+.conteudo-principal {
+  font-family: "Sarala", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-.item-carrinho{
-    background-color: rgba(0, 0, 0, 0.8);
-        margin-left: 5%;
-        display: inline-flexbox;
-        width: 83%;
-        height: 10%;
-        padding: 15px;
-        max-width: 100%;
-        color: #FFF2E7;
-        font-size: 20px;
-        font-family: 'Sarala', sans-serif;
-        border-radius: 15px;
-        margin-top: 2%;
+.item-carrinho {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 5%;
+  display: inline-flexbox;
+  width: 83%;
+  height: 10%;
+  padding: 15px;
+  max-width: 100%;
+  color: #fff2e7;
+  font-size: 20px;
+  font-family: "Sarala", sans-serif;
+  border-radius: 15px;
+  margin-top: 2%;
 }
 
-.quant{
-    margin-left: 50%;
-}
-.frete{
-    background-color: rgba(0, 0, 0, 0.8);
-    margin-left: 70%;
-    display: inline-flex;
-    width: 18%;
-    height: 10%;
-    padding: 15px;
-    max-width: 100%;
-    color: #FFF2E7;
-    font-size: 20px;
-    font-family: 'Sarala', sans-serif;
-    border-radius: 15px;
-    margin-top: 2%;
-}
-.cep{
-        display: inline-flex;
-        width: 40%;
-        height: 00%;
-        padding: 10px;
-        max-width: 100%;
-        border-radius: 5px;
-        
-}
-.ok{
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    position: relative;
-    z-index: 2;
+.quant {
+  margin-left: 50%;
 }
 
-.comprar{
-    margin-left: 71%;
-    display: inline-flexbox;
-    width: 19%;
-    height: 10%;
-    padding: 15px;
-    max-width: 100%;
-    border-radius: 15px;
+.comprar {
+  margin-left: 71%;
+  display: inline-flexbox;
+  width: 19%;
+  height: 10%;
+  padding: 15px;
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 .imagens {
-    width: 10%;
-    height: 20%;
-    max-width: 100%;
-    margin-left: 60px;
-    align-items: flex-start;
+  width: 10%;
+  height: 20%;
+  max-width: 100%;
+  margin-left: 60px;
+  align-items: flex-start;
+}
+
+.endereco {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  display: flex;
+  padding-top: 10px;
+  scroll-padding-inline-end: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rodape {
+  padding: 32px;
+  align-items: center;
+  border-top: 0.1px solid rgb(255, 255, 255);
 }

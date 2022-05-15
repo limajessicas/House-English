@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
-  font-family: arial, helvetica, sans-serif;
+  font-size: 100%;
   background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%);
 }
 
@@ -16,17 +23,13 @@ body {
   max-width: 100%;
 }
 
-.cabecalho-menu {
-  display: flex;
-  gap: 32px;
-}
-
 .cabecalho-menu-item {
   font-family: "Sarala", sans-serif;
   color: #fff2e7;
   font-weight: 400;
   font-size: 18px;
   cursor: pointer;
+  padding-left: 15px;
 }
 
 .conteudo {
@@ -34,48 +37,12 @@ body {
   border-top: 0.4px solid #fff2e7;
 }
 
-.tela-login {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: translate (-50%, -50%);
-  padding: 90px;
-  margin-bottom: 100%;
-  border-radius: 15px;
-  color: aliceblue;
-  position: absolute;
-  left: 40%;
-}
-
-.input {
-  padding: 0px;
-  border-radius: 15px;
-}
-
-.esqueciSenha {
-  color: aliceblue;
-  cursor: pointer;
-  font-size: 12px;
-  margin-left: 60px;
-}
-
-.botao {
-  background-color: white;
-  padding: 5px;
-  width: 100%;
-  border-radius: 10px;
-  font-size: white;
-}
-
-.cadastro {
-  color: aliceblue;
-  font-size: 12px;
-  margin: center;
-}
-
-.cliqueAqui {
-  color: aliceblue;
-  cursor: pointer;
-  font-size: 12px;
-  margin-left: 40px;
+.texto {
+  margin-left: 70px;
+  font-family: "Pacifico", cursive;
+  font-weight: 40;
+  font-size: 35px;
+  color: #fff2e7;
 }
 
 .endereco {

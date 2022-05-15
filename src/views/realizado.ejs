@@ -8,7 +8,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../public/stylesheets/pedidoRealizado.css"
+      href="stylesheets/realizado.css"
     />
   </head>
   <body>
@@ -18,12 +18,19 @@
         <nav class="cabecalho-menu">
             <a class="cabecalho-menu-item"
                 href="/">Home</a>
+                <% if(usuario !=undefined){ %>
+        <a
+          class="cabecalho-menu-item"
+          href="/perfil/<%=usuario.pk_id_cliente%>" 
+        >
+          <%= usuario.nome %>
+        </a>
+        <% }else{ %>
+        <a class="cabecalho-menu-item" href="/login">Login</a>
+        <%}%>
+      </nav>
         </nav>
     </header>
-
-    <div class="conteudo"></div> 
-
-
     <main>
         <div class="conteudo"></div>
     <div class="texto">
@@ -31,4 +38,11 @@
       Em breve seu pedido chegará em seu endereço.
     </div>
   </body>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+
+  <%- include("./partials/footer.ejs") %>
 </html>

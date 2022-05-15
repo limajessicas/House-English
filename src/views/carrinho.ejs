@@ -44,7 +44,10 @@
         <img class="imagens" src="../images/<%= pedido.nome_imagem %>" alt="<%= pedido.nome %>"></img>
         <br></br> 
         <label>Valor R$ <%=pedido.valor%></label>
-        <input name="quantidade"></input>
+        <div>
+          <label>Informe a quantidade desejada</label>
+        <input name="quantidade" placeholder="Ex.: 10" required></input>
+        </div>
         <br></br> 
       </div>
     </section>

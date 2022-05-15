@@ -1,94 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@400;500;600;700&family=Righteous&family=Sarala:wght@400;700&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@400;500;600;700&family=Righteous&family=Sarala:wght@400;700&family=Varela+Round&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    font-size: 100%;
-    background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%)
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%);
 }
 
 .cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
 }
 
 .cabecalho-imagem {
-    height: 72px;
-    max-width: 100%;
+  height: 72px;
+  max-width: 100%;
 }
 
 .cabecalho-menu {
-    display: flex;
-    gap: 32px;
-
+  display: flex;
+  gap: 32px;
 }
 
 .cabecalho-menu-item {
-    font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
-    font-weight: 400;
-    font-size: 18px;
-    cursor: pointer;
+  font-family: "Sarala", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .conteudo {
-    margin-bottom: 48px;
-    border-top: 0.4px solid #FFF2E7;
+  margin-bottom: 48px;
+  border-top: 0.4px solid #fff2e7;
 }
 
 .produtos {
-    background-color: rgba(0, 0, 0, 0.8);
-    margin-left: 1%;
-    display: inline-block;
-    width: 23%;
-    height: 10%;
-    padding: 15px;
-    max-width: 100%;
-    color: #FFF2E7;
-    font-size: 20px;
-    font-family: 'Sarala', sans-serif;
-    border-radius: 15px;
-    margin-top: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 1%;
+  display: inline-block;
+  width: 23%;
+  height: 10%;
+  padding: 15px;
+  max-width: 100%;
+  color: #fff2e7;
+  font-size: 20px;
+  font-family: "Sarala", sans-serif;
+  border-radius: 15px;
+  margin-top: 2%;
 }
 
 .imagens {
-    width: 60%;
-    height: 50%;
-    max-width: 100%;
-    margin-left: 60px;
-    align-items: flex-start;
+  width: 60%;
+  height: 50%;
+  max-width: 100%;
+  margin-left: 60px;
+  align-items: flex-start;
 }
 
 .comprar {
-    font-size: 17px;
-    font-family: 'Sarala',
-    sans-serif;
-    display:flex;
-    border-radius: 10px;
-    padding:10px;
-    margin-left: 22%;
+  font-size: 17px;
+  font-family: "Sarala", sans-serif;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 22%;
 }
 
 .endereco {
-    font-family: 'Varela Round', sans-serif;
-    color: white;
-    display: flex;
-    padding-top: 10px;
-    scroll-padding-inline-end: 20px;
-    align-items: center;
-    flex-direction: column;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  display: flex;
+  padding-top: 10px;
+  scroll-padding-inline-end: 20px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .rodape {
-    padding: 32px;
-    align-items: center;
-    border-top: 0.1px solid rgb(255, 255, 255);
+  padding: 32px;
+  align-items: center;
+  border-top: 0.1px solid rgb(255, 255, 255);
 }
