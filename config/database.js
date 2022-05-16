@@ -7,3 +7,5 @@ const config = {
 };
 
 module.exports = config;
+
+/*configuracao com o banco de dados */
