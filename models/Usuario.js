@@ -21,3 +21,5 @@ module.exports = (sequelize, DataType) => {
   );
   return Usuario;
 };
+
+/* banco de dados <> sequelize*(como foi criada cada tabela do banco de dados)*/

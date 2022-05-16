@@ -5,5 +5,5 @@ function auth(req, res, next) {
     return res.redirect("/login");
   }
 }
-
+/*verificar se o usuario esta logado*/
 module.exports = auth;

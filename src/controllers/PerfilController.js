@@ -1,5 +1,4 @@
 const bcrypt = require("bcrypt");
-const res = require("express/lib/response");
 const { Cliente, Endereco } = require("../../models");
 
 const PerfilController = {
@@ -56,10 +55,12 @@ const PerfilController = {
       },
       { where: { pk_id_endereco: findCliente.fk_endereco } }
     );
-    return response.send("sucesso fii");
+    return response.redirect(`/perfil/${id_cliente}`);
   },
   delete: async (requisicao, response) => {
     let { id } = requisicao.params;
+    requisicao.cookies.logado = undefined;
+    requisicao.session.usuario = undefined;
     let findCliente = await Cliente.findOne({
       where: { pk_id_cliente: parseInt(id) },
     });
@@ -67,6 +68,7 @@ const PerfilController = {
     await Endereco.destroy({
       where: { pk_id_endereco: findCliente.fk_endereco },
     });
+
     return response.redirect("/");
   },
 };
