@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 24px;
+  max-width: 100%;
 }
 
 .cabecalho-imagem {
@@ -42,12 +43,13 @@ body {
   border-radius: 15px;
   color: aliceblue;
   position: absolute;
-  left: 40%;
+  flex-direction: center;
 }
 
 .input {
   padding: 0px;
   border-radius: 15px;
+  max-width: 100%;
 }
 
 .esqueciSenha {
