@@ -10,16 +10,19 @@ body {
   justify-content: space-around;
   padding: 24px;
   max-width: 100%;
+  display: flex;
 }
 
 .cabecalho-imagem {
   height: 72px;
   max-width: 100%;
+  display: flex;
 }
 
 .cabecalho-menu {
   display: flex;
   gap: 32px;
+  display: flex;
 }
 
 .cabecalho-menu-item {
@@ -44,6 +47,8 @@ body {
   color: aliceblue;
   position: absolute;
   flex-direction: center;
+  max-width: 100%;
+  margin-left: 40%;
 }
 
 .input {
